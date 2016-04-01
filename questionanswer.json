@@ -1,0 +1,21 @@
+{ "questions": [{
+    "ask": "Where is your favorite place on Earth?",
+    "author": "Linda Yang",
+    "detail": "I want to know where your favorite place in the world is!"
+  }, {
+    "ask": "What is the moon like?",
+    "author": "Chris Man",
+    "detail": "If you have ever walked on the moon, what was it like?"
+  }, {
+    "ask": "What is better, Ember or Angular?",
+    "author": "Lindsey Raffa",
+    "detail": "I am a Junior Developer and would like to know which is better to learn"
+  }],
+  "answers": [{
+      "response": "Feather River",
+      "name": "Lindsey"
+    }, {
+      "response": "Seattle",
+      "name": "Lindsey"
+    }]
+  }

@@ -1,8 +1,22 @@
 <h3>Ask any question and the Question Master will have your answer.</h3>
+
+
+<h2> Questions </h2>
+
 <ul>
-  {{#each model as |question|}}
-     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question save2="save3"}}
+
+<h2> Answers </h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.response}}</li>
+  {{/each}}
+</ul>
+
+<hr>
