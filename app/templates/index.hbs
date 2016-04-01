@@ -15,8 +15,11 @@
 
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer.response}}</li>
+   {{answer-tile answer=answer update="update" destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>
+
+{{new-answer save2="save3"}}
+
 
 <hr>

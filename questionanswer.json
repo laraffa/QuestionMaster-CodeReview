@@ -12,10 +12,10 @@
     "detail": "I am a Junior Developer and would like to know which is better to learn"
   }],
   "answers": [{
-      "response": "Feather River",
+      "answer": "Feather River",
       "name": "Lindsey"
     }, {
-      "response": "Seattle",
+      "answer": "Seattle",
       "name": "Lindsey"
     }]
   }
