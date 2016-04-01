@@ -1,0 +1,8 @@
+<li>{{question.ask}}<br>
+  Posted by: {{question.author}}
+  {{#if isDetailShowing }}
+    <p>{{question.detail}}  <button {{action 'detailHide'}}>Hide Detail</button></p>
+  {{else}}
+     <button {{action 'detailShow'}}>Show Detail</button>
+ {{/if}}
+</li>
