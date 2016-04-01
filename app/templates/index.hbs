@@ -1,6 +1,8 @@
 <h3>Ask any question and the Question Master will have your answer.</h3>
 <ul>
   {{#each model as |question|}}
-     {{question-tile question=question}}
+     {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
+
+{{new-question save2="save3"}}
