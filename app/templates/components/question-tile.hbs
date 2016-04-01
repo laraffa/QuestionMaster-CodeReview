@@ -1,10 +1,8 @@
-<li>{{question.ask}}<br>
-  Posted by: {{question.author}}
+<li>{{#link-to 'question' question.id}}{{question.ask}}<br>
+  Posted by: {{question.author}} {{/link-to}}
   {{#if isDetailShowing }}
     <p>{{question.detail}}  <button {{action 'detailHide'}}>Hide Detail</button></p>
   {{else}}
      <button {{action 'detailShow'}}>Show Detail</button>
  {{/if}}
- {{update-question question=question update="update"}}
- <button {{action 'delete' question}}>Delete</button>
 </li>
