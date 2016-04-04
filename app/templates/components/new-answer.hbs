@@ -1,21 +1,21 @@
-
-{{#if addNewAnswer}}
-  <h1>New Answer</h1>
+<div class="newAnswer">
+  {{#if addNewAnswer}}
+    <h1>New Answer</h1>
     <div>
       <form>
         <div class="form-group">
-          <label for="answer">Answer</label>
-          {{input value=answer id="answer"}}
+          <label for="Name">User Name</label>
+          {{input value=answerUserName id="Name"}}
         </div>
 
         <div class="form-group">
-          <label for="name">Your Name</label>
-          {{input value=name id="name"}}
+          <label for="answerContent">Answer</label>
+          {{input value=answerContent id="answerContent"}}
         </div>
-
-        <button {{action 'save1'}}>Save</button>
+        <button {{action 'save'}}>Save</button>
       </form>
     </div>
-{{else}}
-    <button {{action 'answerFormShow'}}>New Answer</button>
-{{/if}}
+  {{else}}
+    <button {{action 'answerFormShow'}}>Add an answer</button>
+  {{/if}}
+</div>

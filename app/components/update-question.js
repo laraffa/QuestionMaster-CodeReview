@@ -1,4 +1,3 @@
-
 import Ember from 'ember';
 
 export default Ember.Component.extend({
@@ -9,9 +8,9 @@ export default Ember.Component.extend({
     },
     update(question) {
       var params = {
-        ask: this.get('ask'),
-        author: this.get('author'),
-        detail: this.get('detail'),
+        userQuestion: this.get('userQuestion'),
+        userName: this.get('userName'),
+        comment: this.get('comment'),
       };
       this.set('updateQuestionForm', false);
       this.sendAction('update', question, params);

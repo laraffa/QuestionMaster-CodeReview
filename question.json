@@ -1,14 +1,18 @@
 { "questions": [{
-    "ask": "Where is your favorite place on Earth?",
-    "author": "Linda Yang",
-    "detail": "I want to know where your favorite place in the world is!"
+    "userQuestion": "Where is your favorite place on Earth?",
+    "userName": "Linda Yang",
+    "comment": "I want to know where your favorite place in the world is!"
   }, {
-    "ask": "What is the moon like?",
-    "author": "Chris Man",
-    "detail": "If you have ever walked on the moon, what was it like?"
+    "userQuestion": "What is the moon like?",
+    "userName": "Chris Man",
+    "comment": "If you have ever walked on the moon, what was it like?"
   }, {
-    "ask": "What is better, Ember or Angular?",
-    "author": "Lindsey Raffa",
-    "detail": "I am a Junior Developer and would like to know which is better to learn"
+    "userQuestion": "What is better, Ember or Angular?",
+    "userName": "Lindsey Raffa",
+    "userName": "I am a Junior Developer and would like to know which is better to learn"
+  }],
+  "answers": [{
+    "answerUserName": "Lindsey Raffa",
+    "answerContent": "I love Australia!"
   }]
 }

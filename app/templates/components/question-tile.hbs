@@ -1,11 +1,9 @@
-<li>{{#link-to 'question' question.id}}{{question.ask}}<br>
-  Posted by: {{question.author}} {{/link-to}}
-  {{#if isDetailShowing }}
-    <p>{{question.detail}}  <button {{action 'detailHide'}}>Hide Detail</button></p>
-  {{else}}
-     <button {{action 'detailShow'}}>Show Detail</button>
- {{/if}}
- {{answer.answer}} by {{answer.name}}
-   {{update-answer answer=answer update="update"}}
-  <button {{action 'delete' answer}}>Delete</button>
-</li>
+<div class="questionTile">
+  <li>
+  {{#link-to 'question' question.id}}
+    <h3>{{question.userQuestion}}</h3>
+  {{/link-to}}
+    <p>{{question.userName}}</p>
+    {{update-question question=question update="update"}}
+  </li>
+</div>

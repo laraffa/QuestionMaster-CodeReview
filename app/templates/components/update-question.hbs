@@ -1,25 +1,25 @@
 {{#if updateQuestionForm}}
-  <h4>Update {{question.author}}'s question: {{question.ask}}</h4>
+  <div class="updateQuestion">
     <div>
       <form>
         <div class="form-group">
-          <label for="ask">Question</label>
-          {{input value=ask id="ask" placeholder=question.ask}}
+          <label for="userQuestion">Question</label>
+          {{input value=userQuestion id="userQuestion" placeholder=question.userQuestion}}
         </div>
 
         <div class="form-group">
-          <label for="author">Your Name</label>
-          {{input value=author id="author" placeholder=question.author}}
+          <label for="userName">Your Name</label>
+          {{input value=userName id="userName" placeholder=question.userName}}
         </div>
 
         <div class="form-group">
-          <label for="detail">Question Detail</label>
-          {{input value=detail id="detail" placeholder=question.detail}}
+          <label for="comment">Question Details</label>
+          {{input value=comment id="comment" placeholder=question.comment}}
         </div>
-
         <button {{action 'update' question}}>Save</button>
       </form>
     </div>
+  </div>
 {{else}}
-    <button {{action 'updateQuestionForm'}}>Update</button>
+  <button {{action 'updateQuestionForm'}}>Update Question</button>
 {{/if}}
