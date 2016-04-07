@@ -30,3 +30,20 @@ button {
   border: solid 2px rgb(99,54,65);
   box-shadow: 1px 1px rgba(99,54,65,0.3);
 }
+
+#home {
+  width: 100px;
+  margin: 0 auto;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+}
+
+#home a {
+  color: white;
+  text-decoration: none;
+}
+
+#home a:hover {
+  color: rgb(137,217,208);
+}
