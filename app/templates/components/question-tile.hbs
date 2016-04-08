@@ -5,5 +5,16 @@
   {{/link-to}}
     <p>{{question.userName}}</p>
     {{update-question question=question update="update"}}
+
+    <div>
+    {{#if question.onList}}
+      <h5>Added To Favs</h5>
+    {{else}}
+      <button class="btn btn-primary" {{action 'addToFav' question}}>Fav &#9733;</button>
+
+    {{/if}}
+    </div>
+<!--
+    <button {{action ‘addToFavorites’ question}}>Add to Favorites</button> -->
   </li>
 </div>

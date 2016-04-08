@@ -1,0 +1,13 @@
+
+{{#each favoriteQuestion.favorites as |favorite|}}
+  <!-- <h3><span class="displayFavs"></span>{{#link-to 'question' favorite.id}}{{favorite.userQuestion}}{{/link-to}}</h3>
+	<p>Asked By: {{favorite.userName}}</p> -->
+	{{favorite.userQuestion}} -- {{favorite.userName}}
+ {{/each}}
+
+
+<!-- <h3>Favorites:</h3>
+
+{{#each favoriteQuestion.questions as |question|}}
+  {{question.userQuestion}}
+{{/each}} -->
