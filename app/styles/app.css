@@ -47,3 +47,11 @@ button {
 #home a:hover {
   color: rgb(137,217,208);
 }
+
+.helper {
+  color: rgb(26,41,124);
+}
+
+.helper span {
+  color: rgb(99,54,65);
+}

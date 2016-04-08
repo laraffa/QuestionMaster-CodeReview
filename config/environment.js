@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'question-master',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://questionmaster.firebaseio.com/',
+    firebase: 'https://book-review.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

@@ -4,7 +4,8 @@
   </div>
   <ul>
     {{#each model.questions as |question|}}
-      {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+    <!-- {{answer-popularity question}} {{#link-to 'question' question.id}}{{/link-to}} -->
+      {{answer-popularity question}}{{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
       <hr>
     {{/each}}
   </ul>
