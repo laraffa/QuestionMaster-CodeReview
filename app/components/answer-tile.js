@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  fullName: Ember.computed('answer.answerUserName', 'answer.answerAbout', function() {
+    return this.get('answer.answerUserName') + ', ' + this.get('answer.answerAbout');
+  }),
+
   updateAnswerForm: false,
   actions: {
     update(answer, params) {
